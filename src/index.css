@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap'); /* Custom cyberpunkish font */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: #121212; /* Dark cyberpunk background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Orbitron', sans-serif; /* Custom cyberpunkish font */
+  color: #00ffcc; /* Neon green text */
+}
+
+.screen {
+  height: 4rem;
+  margin-bottom: 4rem;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0.5rem;
+  border: 2px solid #00ffcc; /* Neon green accent */
+  border-radius: 0.5rem;
+  background: #121212; /* Dark cyberpunk background */
+  box-shadow: 0px 4px 10px rgba(0, 255, 204, 0.3);
+}
+
+.wrapper {
+  background: #262626; /* Slightly lighter cyberpunk background */
+  width: 20rem;
+  padding: 2rem;
+  margin-top: 4rem;
+  border-radius: 1rem;
+  box-shadow: 0px 9px 15px -3px rgba(0, 0, 0, 0.5); /* Cyberpunk box shadow */
+}
+
+.buttonBox {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.button {
+  background: #009688; /* Slightly toned-down green */
+  height: 3.5rem;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #fff; /* White text for contrast */
+  border: none;
+  font-size: 1.5rem;
+  transition: background-color 0.3s ease, transform 0.2s ease, color 0.3s ease;
+}
+
+.button:hover {
+  background: #00796b; /* Slightly darker green on hover */
+  transform: scale(1.05);
+}
+
+.equals {
+  background: #009688; /* Neon green equals button */
+  grid-column: span 2; /* Span two columns for a wider equals button */
+}
